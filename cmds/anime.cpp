@@ -1,7 +1,7 @@
 #include "../utils/anime.hpp"
 #include <nlohmann/json.hpp>
 #include <tgbot/tgbot.h>
-#include <mdparser-cpp/WotoMd.h>
+#include "../mdparser-cpp/WotoMd.h"
 
 
 using json = nlohmann::json;

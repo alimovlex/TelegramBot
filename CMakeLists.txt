@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(BotPlusPlus VERSION 0.1.0)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a -Og -g")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a -Og -g -Wno-deprecated-declarations")
 set(Boost_USE_MULTITHREADED ON)
 
 find_package(Threads REQUIRED)
@@ -58,6 +58,6 @@ FetchContent_MakeAvailable(mdparser-cpp)
 FetchContent_MakeAvailable(toml11)
 FetchContent_MakeAvailable(cpr)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} mdparser-cpp/WotoMd.cpp  main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE TgBot spdlog mdparser-cpp toml11 cpr::cpr)
 

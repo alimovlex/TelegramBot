@@ -1,4 +1,4 @@
-#include <mdparser-cpp/WotoMd.h>
+#include "../mdparser-cpp/WotoMd.h"
 #include <tgbot/tgbot.h>
 
 std::string startHandler(const TgBot::Message::Ptr& message) {

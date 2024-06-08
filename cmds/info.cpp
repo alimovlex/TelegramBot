@@ -1,5 +1,5 @@
 #include "../utils/getuser.hpp"
-#include <mdparser-cpp/WotoMd.h>
+#include "../mdparser-cpp/WotoMd.h"
 
 namespace msg {
     std::string infohandler(const TgBot::Message::Ptr& message){
