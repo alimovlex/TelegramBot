@@ -7,6 +7,10 @@ zsh: IOT instruction  ./BotPlusPlus
 ```
 cmake-build-debug/./_deps/tgbot-src/src/TgTypeParser.cpp
 ```
+## At the following function:
+```
+User::Ptr TgTypeParser::parseJsonAndGetUser(const ptree& data) const
+```
 Change 
 ```
 result->id = data.get<int32_t>("id");
